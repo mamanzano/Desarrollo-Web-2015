@@ -1,0 +1,17 @@
+main{
+	display: table;
+}
+
+	header{
+		display: table-caption;
+	}
+
+	section{
+		display: table-cell;
+		background-color: maroon
+	}
+
+	aside{
+		display: table-cell;
+		background-color: peru;
+	}
