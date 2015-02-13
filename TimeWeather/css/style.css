@@ -1,17 +1,70 @@
-main{
-	display: table;
+body
+{
+	margin: 0;
+	padding: 0;
 }
 
-	header{
-		display: table-caption;
+
+
+.weather-card
+{
+	background-color: #80EAE8; 
+	padding: .5em;
+}
+
+	.weather-card__header
+	{
+		margin: 0;
 	}
 
-	section{
-		display: table-cell;
-		background-color: maroon
+	.weather-card__date
+	{
+		border-bottom: 1px solid #D380EA;
+		font-weight: normal;;
+		font-size: 12px;
+		font-family: courier;
+		margin: 0 0 .5em 0;
+		display: block;
+	}
+	.weather-card__footer
+	{
+		margin: 0;
+		padding: 0;
+		list-style-type: none; 
 	}
 
-	aside{
-		display: table-cell;
+	/*.weather-card__footer__item
+	{
+		text-align: center;
+	}
+
+	.weather-card__footer__item:first-child
+	{
+		background-color: red;
+	}
+	.weather-card__footer__item:last-child
+	{
 		background-color: peru;
 	}
+
+	.weather-card__footer__item:nth-child(2)
+	{
+		background-color: blue;
+	}*/
+
+	.temperature::after
+	{
+		content: attr(data-unidad);
+		font-size: 12px;
+		font-family: courier;
+		color: red;
+	}
+
+[]
+.centrar
+{
+	width: 400px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
