@@ -35,6 +35,149 @@ input[type="submit"]
 	
 }
 
+.main-header
+{
+	text-align: center;
+	background-color: #16210b;
+	color: white;
+	padding: 8px;
 
+}
+	.main-header h1
+	{
+		margin: 0;
+	}
+	.main-header h2
+	{
+		font-size: 1rem;
+		font-weight: normal;
+
+	}
+
+@media all and (min-width: 500px)
+{
+	.main-header
+	{
+		text-align: left;
+	}
+}
+
+@media all and(orientation: landscape)
+{
+	.main-header
+	{
+		background-color: white;
+		color: black;
+	}
+}
+
+.search
+{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	padding: 8px;
+}
+
+	.search__text
+	{
+		width: 100%;
+	}
+
+.card
+{
+	position: relative;
+	height: 30vh;
+	width: 100vh;
+	font-family: 'Megrim', cursive;
+	color: white;
+	padding: 8px;
+	text-shadow: 0 0 3px black;
+	margin-bottom: 8px;
+	background-size: cover;
+}
+
+
+.card__title
+{
+	margin: 0;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.card__date
+{
+	text-align: center;
+	margin: 0;
+}
+
+	.card__date::after, .card__date::before
+	{
+		content: " - "
+	}
+
+.card__info
+{
+	position: absolute;
+	bottom: 8px;
+	left: 8px;
+	text-align: center;
+	
+}
+
+.card__image
+{
+	display: block;
+}
+
+.card__temp
+{
+	display: block;
+	font-size: 3.5rem;
+	line-height: 1;
+}
+
+.card__mint::before
+{
+	content: "min: "
+}
+
+.card__maxt::before
+{
+	content: "max: "
+}
+
+.card[data-ciudad="valencia"]
+{
+	background-image: url(../image/valencia.jpg);
+}
+
+.card[data-ciudad="mountainview"]
+{
+	background-image: url(../image/mv.jpg);
+}
+
+@media all and (max-width: 500px)
+{
+	.card[data-ciudad="valencia"]
+	{
+		background-image: url(../image/valencia-small.jpg);
+	}
+
+	.card
+	{
+		
+		position: relative;
+		height: 30vh;
+		width: 50vh;
+		font-family: 'Megrim', cursive;
+		color: white;
+		padding: 8px;
+		text-shadow: 0 0 3px black;
+		margin-bottom: 8px;
+		background-size: cover;
+		background-color: red;
+	}
+}
 
 
