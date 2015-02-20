@@ -1,70 +1,40 @@
+html
+{
+	font-size: 90%;
+}
+
+@media all and (max-width: 480px)
+{
+	html
+	{
+		font-size: 60%;
+	}
+}
+
 body
 {
+	font-family: 'Ovo', serif;
 	margin: 0;
 	padding: 0;
 }
 
-
-
-.weather-card
+input[type="submit"]
 {
-	background-color: #80EAE8; 
-	padding: .5em;
+	-webkit-appearance:none;
 }
 
-	.weather-card__header
-	{
-		margin: 0;
-	}
-
-	.weather-card__date
-	{
-		border-bottom: 1px solid #D380EA;
-		font-weight: normal;;
-		font-size: 12px;
-		font-family: courier;
-		margin: 0 0 .5em 0;
-		display: block;
-	}
-	.weather-card__footer
-	{
-		margin: 0;
-		padding: 0;
-		list-style-type: none; 
-	}
-
-	/*.weather-card__footer__item
-	{
-		text-align: center;
-	}
-
-	.weather-card__footer__item:first-child
-	{
-		background-color: red;
-	}
-	.weather-card__footer__item:last-child
-	{
-		background-color: peru;
-	}
-
-	.weather-card__footer__item:nth-child(2)
-	{
-		background-color: blue;
-	}*/
-
-	.temperature::after
-	{
-		content: attr(data-unidad);
-		font-size: 12px;
-		font-family: courier;
-		color: red;
-	}
-
-[]
-.centrar
+.btn
 {
-	width: 400px;
-	margin-right: auto;
-	margin-left: auto;
+	display: inline-block;
+	line-height: 1.2;
+	text-align: center;
+	border: 1px solid #16210b;
+	background-color: #ff4842;
+	color: white;
+	font-size: .6rem;
+	
 }
+
+
+
 
