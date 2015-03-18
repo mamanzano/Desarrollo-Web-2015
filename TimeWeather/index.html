@@ -14,12 +14,19 @@
 		<h2>An awosome way to see how</h2>
 	</header>
 
+	<div class="loader">
+		Geolocalizando tu posición, por favor espere..
+	</div>
+	<form action="" class="search">
+		<input type="text" class="search__text" data-input="cityAdd" placeholder="Agregar una nueva ciudad">
+		<input type="submit" data-input="add" class="search__btn" value="Añadir una nueva ciudad">
+	</form>
 	<main class="cards-group">
 		<template id="template--city">
 			<div class="card" >
 			<header class="card__header">
 				<h3 data-city class="card__title"></h3>
-				<h4 date-time class="card__date"></h4>
+				<h4 data-time class="card__date"></h4>
 			</header>
 			<div class = "card__info">
 				<img data-icon src="" alt="" class="card__image">
