@@ -81,7 +81,13 @@ input[type="submit"]
 
 	.search__text
 	{
-		width: 75%;
+		width: 70%;
+	}
+	.search__btn{
+		background-color: #DA5715;
+		color: white;
+		font-size: 1em;
+		padding: .5em;
 	}
 
 .card
